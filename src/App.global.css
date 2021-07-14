@@ -1,0 +1,104 @@
+/* @import "../node_modules/bootstrap/dist/css/bootstrap.css";
+@import "../node_modules/status-indicator/styles.css";
+@import "../node_modules/react-datepicker/dist/react-datepicker.css";
+
+@import "../assets/fonts/stylesheet.css";
+
+@import "./components/template/Footer.css";
+@import "./components/template/Header.css";
+@import "./components/template/Main.css";
+@import "./components/template/Nav.css";
+
+@import "./components/Terminal/Terminal.css";
+@import "./components/Users/Users.css";
+@import "./components/Home/Home.css";
+
+:root {
+    --header-height: 30px;
+    --aside-width-small: 50px;
+    --aside-width-big: 180px;
+    --footer-height: 20px;
+
+    --first-color: #00adb5;
+    --bg-color: #393e46;
+    --sub-color: #222831;
+    --white-color: #eeeeee;
+    --gray-color: gray;
+
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+
+    --z-fixed: 100;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Poppins, serif;
+    text-decoration: none;
+    user-select: none;
+}
+
+.app {
+    margin: 0px;
+    height: 100vh;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gray-color);
+    border-radius: 2px;
+}
+
+.card {
+    background: var(--bg-color);
+    color: var(--white-color);
+    padding: .5rem;
+}
+
+.small-card {
+    background: var(--bg-color);
+    color: var(--white-color);
+    padding: .5rem;
+    height: 50px;
+    border-radius: 5px;
+}
+
+.alert-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    border-radius: 5px;
+}
+.alert-success-custom {
+    border: 1px solid rgb(80, 218, 172);
+    color: rgb(80, 218, 172);
+    font-weight: 500;
+}
+.alert-alert-custom {
+    border: 1px solid #fed049;
+    color: #fed049;
+    font-weight: 500;
+}
+.alert-danger-custom {
+    border: 1px solid #fb3640;
+    color: #fb3640;
+    font-weight: 500;
+}
+.alert-info-custom {
+    border: 1px solid #51c4d3;
+    color: #51c4d3;
+    font-weight: 500;
+}
+
+.w-15 {
+    width: 15%;
+}
+
+.no-click {pointer-events: none;} */
