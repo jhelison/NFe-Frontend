@@ -16,12 +16,18 @@ aside {
     height: 40px;
     color: var(--secondary-text-icons);
     border-radius: 5px;
+    transition: 0.2s;
 }
 
 .aside-button:hover {
-    border: 2px solid var(--status-sucess);
+    border: 1px solid var(--status-sucess);
     box-sizing: border-box;
     color: var(--status-sucess);
+}
+
+.aside-button:active {
+    color: var(--foreground-white);
+    background-color: var(--status-sucess);
 }
 
 .aside-button-selected {
