@@ -13,6 +13,7 @@ header {
 
 .header-button {
     width: 30px;
+    transition: 0.2s;
 }
 
 .header-button:hover {

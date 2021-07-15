@@ -14,10 +14,16 @@ main h1 {
     width: 25px;
     height: 25px;
     border-radius: 4px;
+    box-sizing: border-box;
+    transition: 0.2s;
 }
 
 .main-back-button:hover {
     background-color: var(--foreground-dark);
+}
+.main-back-button:active {
+    background-color: var(--foreground-dark);
+    border: 1px solid var(--status-sucess);
 }
 
 .main-children-container {
