@@ -21,11 +21,13 @@
     --status-info: #17A2B8;
     --status-danger: #DC3545;
     --status-sucess: #28A745;
+    --status-secondary: #6C757D;
 
     --status-alert-hover: #E0A800;
     --status-info-hover: #138496;
     --status-danger-hover: #C82333;
     --status-sucess-hover: #218838;
+    --status-secondary-hover: #54595E;
 
     --secondary-text-icons: #6C757D;
     --secondary-black: #000000;

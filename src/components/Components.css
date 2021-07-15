@@ -53,3 +53,61 @@
     border-bottom-right-radius: 0px;
     border-right: 0px;
 }
+
+.custom-button-container {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+}
+.custom-button-container:active {
+    border: 1px solid var(--status-info);
+    box-sizing: border-box;
+}
+
+.custom-button-label {
+    color: var(--foreground-white);
+    font-weight: 600;
+}
+
+
+.custom-button-icon-container {
+    width: 30px;
+    height: 30px;
+    border-left: 1px solid var(--foreground-dark);
+    color: var(--foreground-white);
+}
+
+.width-67 {
+    width: 67px;
+}
+
+.button-color-sucess {
+    background-color: var(--status-sucess);
+}
+.button-color-sucess:hover {
+    background-color: var(--status-sucess-hover);
+}
+.button-color-alert {
+    background-color: var(--status-alert);
+}
+.button-color-alert:hover {
+    background-color: var(--status-alert-hover);
+}
+.button-color-info {
+    background-color: var(--status-info);
+}
+.button-color-info:hover {
+    background-color: var(--status-info-hover);
+}
+.button-color-danger {
+    background-color: var(--status-danger);
+}
+.button-color-danger:hover {
+    background-color: var(--status-danger-hover);
+}
+.button-color-secondary {
+    background-color: var(--status-secondary);
+}
+.button-color-secondary:hover {
+    background-color: var(--status-secondary-hover);
+}
