@@ -49,13 +49,13 @@ const buildMainWindow = async () => {
 
     mainWindow = new BrowserWindow({
         show: false,
-        width: 200,
-        height: 280,
+        width: 490,
+        height: 530,
         webPreferences: {
             nodeIntegration: true,
             enableRemoteModule: true,
         },
-        frame: true,
+        frame: false,
         resizable: false,
     })
 

@@ -1,0 +1,40 @@
+aside {
+    width: var(--aside-width);
+    height: 100vh;
+    background-color: var(--foreground-dark);
+    position: absolute;
+}
+
+.nfe-logo {
+    width: 30px;
+    height: 32px;
+    color: var(--secondary-text-icons);
+}
+
+.aside-button {
+    width: 40px;
+    height: 40px;
+    color: var(--secondary-text-icons);
+    border-radius: 5px;
+}
+
+.aside-button:hover {
+    border: 2px solid var(--status-sucess);
+    box-sizing: border-box;
+    color: var(--status-sucess);
+}
+
+.aside-button-selected {
+    color: var(--foreground-white);
+    background-color: var(--status-sucess);
+}
+
+.mt-18 {
+    margin-top: 18px;
+}
+
+.status-ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+}

@@ -1,47 +1,78 @@
-/* @import "../node_modules/bootstrap/dist/css/bootstrap.css";
-@import "../node_modules/status-indicator/styles.css";
-@import "../node_modules/react-datepicker/dist/react-datepicker.css";
+@import "../assets/fonts/inter/stylesheet.css";
 
-@import "../assets/fonts/stylesheet.css";
+@import "./components/utilities.css";
 
-@import "./components/template/Footer.css";
+/* @import "./components/template/Footer.css"; */
 @import "./components/template/Header.css";
-@import "./components/template/Main.css";
-@import "./components/template/Nav.css";
+@import "./components/template/Aside.css";
+/* @import "./components/template/Main.css"; */
+/* @import "./components/template/Nav.css"; */
 
-@import "./components/Terminal/Terminal.css";
-@import "./components/Users/Users.css";
-@import "./components/Home/Home.css";
+/* @import "./components/Terminal/Terminal.css"; */
+/* @import "./components/Users/Users.css"; */
+/* @import "./components/Home/Home.css"; */
 
 :root {
-    --header-height: 30px;
-    --aside-width-small: 50px;
-    --aside-width-big: 180px;
-    --footer-height: 20px;
+    --header-height: 25px;
+    --aside-width: 60px;
 
-    --first-color: #00adb5;
-    --bg-color: #393e46;
-    --sub-color: #222831;
-    --white-color: #eeeeee;
-    --gray-color: gray;
+    --status-alert: #F0AD4E;
+    --status-info: #17A2B8;
+    --status-danger: #DC3545;
+    --status-sucess: #28A745;
 
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
+    --secondary-text-icons: #6C757D;
+    --secondary-black: #000000;
 
-    --z-fixed: 100;
+    --foreground-dark: #D7D6D6;
+    --foreground-white: #FFFFFF;
+
+    --background: #FAFAFA;
 }
 
 * {
     padding: 0;
     margin: 0;
-    font-family: Poppins, serif;
+    font-family: Inter, serif;
     text-decoration: none;
     user-select: none;
 }
 
+h1 {
+    font-size: 24px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+span {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: var(--secondary-text-icons);
+}
+
+.app-border {
+    width: 490px;
+    height: 530px;
+    border: 2px solid #D7D6D6;
+    box-sizing: border-box;
+}
+
+/* 
 .app {
     margin: 0px;
-    height: 100vh;
+    
     transition: 0.5s;
     overflow: hidden;
 }

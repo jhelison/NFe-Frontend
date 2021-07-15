@@ -1,0 +1,20 @@
+header {
+    background-color: var(--foreground-dark);
+    width: calc(100vw - var(--aside-width));
+    height: var(--header-height);
+    margin-left: var(--aside-width);
+    position: absolute;
+}
+
+.drag-region {
+    -webkit-app-region: drag;
+    flex-grow: 1;
+}
+
+.header-button {
+    width: 30px;
+}
+
+.header-button:hover {
+    background-color: var(--secondary-text-icons);
+}

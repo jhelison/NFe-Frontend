@@ -1,0 +1,52 @@
+.d-flex {
+    display: flex;
+}
+
+.just-content-center {
+    justify-content: center;
+}
+
+.just-content-space-bet {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.just-content-end {
+    justify-content: flex-end;
+}
+
+.bg-color-sucess {
+    background-color: var(--status-sucess);
+}
+.bg-color-alert {
+    background-color: var(--status-alert);
+}
+.bg-color-info {
+    background-color: var(--status-info);
+}
+.bg-color-danger {
+    background-color: var(--status-danger);
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}

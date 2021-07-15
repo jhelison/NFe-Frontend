@@ -4,15 +4,22 @@ import "./App.global.css"
 
 // // import Routes from "./Routes"
 
+import Header from "./components/template/Header"
+import Aside from "./components/template/Aside"
+
 // import Header from "./components/template/Header"
 // import Nav from "./components/template/Nav"
 // import Footer from "./components/template/Footer"
 
-import Tray from "./screens/tray"
-
 export default (props) => {
     return (
-        <Tray/>
+        <React.Fragment>
+            <Header/>
+            <Aside />
+
+            <div className="app-border"/>
+        </React.Fragment>
+        
         // <HashRouter>
         //     {/* <div className="app" id="app-root">
         //         <Header />
