@@ -6,6 +6,8 @@ import "./App.global.css"
 
 import Header from "./components/template/Header"
 import Aside from "./components/template/Aside"
+import NewCompany from "./screens/NewCompany/NewCompany"
+// import Content from "./components/template/Content"
 
 // import Header from "./components/template/Header"
 // import Nav from "./components/template/Nav"
@@ -16,6 +18,7 @@ export default (props) => {
         <React.Fragment>
             <Header/>
             <Aside />
+            <NewCompany />
 
             <div className="app-border"/>
         </React.Fragment>

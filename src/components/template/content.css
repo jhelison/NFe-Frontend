@@ -1,0 +1,28 @@
+main {
+    position: absolute;
+    width: calc(100vw - var(--aside-width));
+    height: calc(100vh - var(--header-height));
+    margin-top: var(--header-height);
+    margin-left: var(--aside-width);
+}
+
+main h1 {
+    line-height: 20px;
+}
+
+.main-back-button {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+}
+
+.main-back-button:hover {
+    background-color: var(--foreground-dark);
+}
+
+.main-children-container {
+    position: absolute;
+    width: 411px;
+    height: 425px;
+    top: 60px;
+}
