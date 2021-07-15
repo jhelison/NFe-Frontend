@@ -1,7 +1,7 @@
 @import "../assets/fonts/inter/stylesheet.css";
 
 @import "./components/utilities.css";
-
+@import "./components/Components.css";
 /* @import "./components/template/Footer.css"; */
 @import "./components/template/Header.css";
 @import "./components/template/Aside.css";
@@ -39,6 +39,10 @@
     user-select: none;
 }
 
+*:focus {
+    outline: none;
+}
+
 h1 {
     font-size: 24px;
     line-height: 20px;
@@ -63,11 +67,22 @@ span {
     color: var(--secondary-text-icons);
 }
 
+.span-label {
+    font-weight: 600;
+    color: var(--secondary-black);
+}
+
 .app-border {
     width: 490px;
     height: 530px;
     border: 2px solid #D7D6D6;
     box-sizing: border-box;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: var(--foreground-dark);
 }
 
 /* 

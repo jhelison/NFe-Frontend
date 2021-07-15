@@ -1,0 +1,30 @@
+.custom-input {
+    border-radius: 4px;
+    border: 1px solid var(--foreground-dark);
+    height: 30px;
+    min-width: 0;
+    width: 100%;
+    box-sizing:border-box;
+
+    background-color: var(--foreground-white);
+
+    font-family: Inter, serif;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.custom-input-error {
+    border: 1px solid var(--status-danger);
+}
+
+.custom-input::placeholder {
+    color: var(--foreground-dark);
+}
+
+.custom-input:focus {
+    border: 1px solid var(--status-info);
+}
+
+.custom-select select {
+    color: var(--secondary-text-icons);
+}
