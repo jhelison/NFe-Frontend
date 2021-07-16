@@ -13,7 +13,7 @@ const Content = (props) => {
                         <FiChevronLeft size={iconSize} />
                     </div>
                 ) : null}
-                <h1 className="ml-10">{props.title}</h1>
+                <h1 className={props.goBack ? "ml-10" : ""}>{props.title}</h1>
                 <div className="main-children-container">
                     {props.children}
                 </div>

@@ -7,6 +7,8 @@ import "./App.global.css"
 import Header from "./components/template/Header"
 import Aside from "./components/template/Aside"
 import NewCompany from "./screens/NewCompany/NewCompany"
+import Settings from "./screens/Settings/Settings"
+import CompanyList from "./screens/CompanyList/CompanyList"
 // import Content from "./components/template/Content"
 
 // import Header from "./components/template/Header"
@@ -18,7 +20,9 @@ export default (props) => {
         <React.Fragment>
             <Header/>
             <Aside />
-            <NewCompany />
+            <CompanyList />
+            {/* <NewCompany /> */}
+            {/* <Settings /> */}
 
             <div className="app-border"/>
         </React.Fragment>

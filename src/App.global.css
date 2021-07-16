@@ -6,6 +6,8 @@
 @import "./components/template/Header.css";
 @import "./components/template/Aside.css";
 @import "./components/template/Content.css";
+
+@import "./screens/CompanyList/CompanyList.css";
 /* @import "./components/template/Main.css"; */
 /* @import "./components/template/Nav.css"; */
 
@@ -72,6 +74,14 @@ span {
     line-height: 15px;
     text-align: center;
     color: var(--secondary-text-icons);
+}
+
+label {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 12px;
 }
 
 .span-label {

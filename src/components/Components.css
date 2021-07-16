@@ -111,3 +111,12 @@
 .button-color-secondary:hover {
     background-color: var(--status-secondary-hover);
 }
+
+.cib-extended {
+    width: 140px;
+    border-radius: 4px;
+}
+
+.custom-checkbox {
+    color: brown;
+}

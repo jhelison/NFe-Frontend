@@ -9,7 +9,9 @@ import CustomButton from "../../components/CustomButton"
 
 import UF from "../../data/states"
 
-import { FiTrash2 } from "react-icons/fi";
+import { FiTrash2 } from "react-icons/fi"
+import { FiX } from "react-icons/fi"
+import { FiSave } from "react-icons/fi"
 
 const NewCompany = () => {
     return (
@@ -80,13 +82,21 @@ const NewCompany = () => {
             <div className="divider mb-10" />
 
             <div className="d-flex just-content-space-bet">
-                <CustomButton title="Excluir empresa" danger icon={<FiTrash2/>}/>
+                <CustomButton
+                    title="Excluir empresa"
+                    danger
+                    icon={<FiTrash2 />}
+                />
                 <div className="d-flex">
-                <CustomButton title="Cancelar" icon={<FiTrash2/>}/>
-                <CustomButton className="ml-10" title="Salvar" sucess icon={<FiTrash2/>}/>
+                    <CustomButton title="Cancelar" icon={<FiX />} />
+                    <CustomButton
+                        className="ml-10"
+                        title="Salvar"
+                        sucess
+                        icon={<FiSave />}
+                    />
                 </div>
             </div>
-            
         </Content>
     )
 }
