@@ -34,6 +34,13 @@
     background-color: var(--status-danger);
 }
 
+.fore-color-alert {
+    color: var(--status-alert);
+}
+.fore-color-danger {
+    color: var(--status-danger);
+}
+
 .mt-10 {
     margin-top: 10px;
 }
@@ -52,8 +59,11 @@
 .ml-10 {
     margin-left: 10px;
 }
-.ml-10 {
-    margin-left: 10px;
+.ml-5 {
+    margin-left: 5px;
+}
+.mr-5 {
+    margin-right: 5px;
 }
 
 .pl-10 {

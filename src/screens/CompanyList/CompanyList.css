@@ -2,6 +2,9 @@
     background-color: var(--foreground-white);
     width: 100%;
     height: 365px;
+    border: 1px solid var(--foreground-dark);
+
+    overflow: auto;
 }
 
 .cert-date-pill {
@@ -17,4 +20,41 @@
 
 .company-item-container {
     height: 30px;
+}
+
+.table-c {
+    height: 50px;
+}
+.table-c:hover {
+    background-color: var(--background);
+}
+
+.table-name-div {
+    overflow: hidden;
+    width: 130px;
+}
+
+.table-divider {
+    width: 1px;
+    height: 20px;
+    background-color: var(--foreground-dark);
+}
+
+.CNPJ-width {
+    width: 115px;
+}
+
+.table-action {
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.table-action:hover {
+    background-color: var(--foreground-dark);
+}
+
+.table-action:active {
+    border: 1px solid var(--status-info);
 }

@@ -84,40 +84,51 @@ const buildMainWindow = async () => {
     })
 }
 
-// const buildTray = () => {
-//     const iconPath = require("path").resolve(
-//         __dirname,
-//         "../assets/templateTrayIcon.png"
-//     )
+const buildTray = () => {
+    const iconPath = require("path").resolve(
+        __dirname,
+        
+        "../assets/cmm-sistemas-selo-nfe.png"
+    )
 
-//     const contextMenu = Menu.buildFromTemplate([
-//         {
-//             label: "Mostrar",
-//             type: "normal",
-//             click: () => mainWindow.show()
-//         },
-//         {
-//             label: "Esconder",
-//             type: "normal",
-//             click: () => mainWindow.hide()
-//         },
-//         {
-//             label: "Sair",
-//             type: "normal",
-//             click: () => mainWindow.close()
-//         },
-//     ])
-//     tray = new Tray(iconPath)
-//     tray.setContextMenu(contextMenu)
+    const contextMenu = Menu.buildFromTemplate([
+        {
+            label: "Forçar Execução",
+            type: "normal",
+            click: () => mainWindow.show()
+        },
+        {
+            label: "Parar Execução",
+            type: "normal",
+            click: () => {}
+        },
+        {
+            label: "Empresas",
+            type: "normal",
+            click: () => {}
+        },
+        {
+            label: "Configuração Geral",
+            type: "normal",
+            click: () => {}
+        },
+        {
+            label: "Sair",
+            type: "normal",
+            click: () => mainWindow.close()
+        },
+    ])
+    tray = new Tray(iconPath)
+    tray.setContextMenu(contextMenu)
     
-//     tray.on('double-click', () => {
-//         mainWindow.show()
-//     })
-// }
+    tray.on('double-click', () => {
+        mainWindow.show()
+    })
+}
 
 app.whenReady().then(() => {
     buildMainWindow()
-    // buildTray()
+    buildTray()
 
     app.on("activate", () => {
         if (mainWindow === null){
