@@ -25,7 +25,7 @@ const CompanyList = (props) => {
     const generateTable = () => {
         return tempComp.map((row) => {
             return (
-                <div className="table-c d-flex align-items-center just-content-space-bet">
+                <div className="table-c d-flex align-items-center just-content-space-bet" key={row.CNPJ}>
                     <div className="d-flex align-items-center">
                         <div className="cert-date-pill bg-color-sucess d-flex align-items-center just-content-center ml-5">
                             <span className="span-pill">{row.cert}</span>

@@ -33,6 +33,7 @@ aside {
 .aside-button-selected {
     color: var(--foreground-white);
     background-color: var(--status-sucess);
+    pointer-events: none;
 }
 
 .mt-18 {
