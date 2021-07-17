@@ -1,4 +1,5 @@
 import React from "react"
+import { useHistory } from "react-router-dom"
 
 import Content from "../../components/template/Content"
 
@@ -13,9 +14,27 @@ import { FiTrash2 } from "react-icons/fi"
 import { FiX } from "react-icons/fi"
 import { FiSave } from "react-icons/fi"
 
-const NewCompany = () => {
+const NewCompany = (props) => {
+    let history = useHistory()
+
+
+    const getTitle = () => {
+        if(props.location.state){
+            if(props.location.state.title){
+                return props.location.state.title
+            }
+        }
+        return "Nova empresa"
+    }
+
+    console.log(props.location.state)
+
     return (
-        <Content title="Nova empresa" goBack>
+        <Content
+            title={getTitle()}
+            goBack
+            goBackOnClick={() => history.push("/companies")}
+        >
             <CustomTextInput
                 className="mb-10"
                 label="Nome da empresa"
@@ -26,6 +45,8 @@ const NewCompany = () => {
                 <CustomTextInput
                     label="CNPJ"
                     placeholder="00.000.000/0000-00"
+                    mask="99.999.999/9999-99"
+                    maskChar=" "
                 />
 
                 <CustomSelect label="UF">
@@ -88,7 +109,11 @@ const NewCompany = () => {
                     icon={<FiTrash2 />}
                 />
                 <div className="d-flex">
-                    <CustomButton title="Cancelar" icon={<FiX />} />
+                    <CustomButton
+                        title="Cancelar"
+                        icon={<FiX />}
+                        onClick={() => history.push("/companies")}
+                    />
                     <CustomButton
                         className="ml-10"
                         title="Salvar"

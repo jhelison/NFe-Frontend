@@ -22,12 +22,12 @@ const CustomButton = (props) => {
 
 
     return (
-        <div className={"d-flex align-items-center just-content-center custom-button-container " + getButtonColor() + props.className}>
+        <div className={"d-flex align-items-center just-content-center custom-button-container " + getButtonColor() + props.className}
+        onClick={props.onClick}>
             <div className="d-flex align-items-center just-content-center width-67">
                 <span className="custom-button-label">{props.title}</span>
             </div>
             
-            {/* <div className="custom-button-divider"/> */}
             <div className="d-flex align-items-center just-content-center custom-button-icon-container">
                 {props.icon}
             </div>

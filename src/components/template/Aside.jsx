@@ -30,7 +30,7 @@ const Aside = (props) => {
             const ele = document.getElementById('aside-settings')
             ele.classList.toggle("aside-button-selected")
         }
-        else if(location.pathname == "/companies"){
+        else if(location.pathname.startsWith("/companies")){
             const ele = document.getElementById('aside-companies')
             ele.classList.toggle("aside-button-selected")
         }

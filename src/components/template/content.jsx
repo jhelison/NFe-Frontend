@@ -9,7 +9,8 @@ const Content = (props) => {
         <main>
             <div className="d-flex align-items-center mt-20 ml-10">
                 {props.goBack ? (
-                    <div className="main-back-button d-flex just-content-center align-items-center">
+                    <div className="main-back-button d-flex just-content-center align-items-center"
+                    onClick={props.goBackOnClick}>
                         <FiChevronLeft size={iconSize} />
                     </div>
                 ) : null}
