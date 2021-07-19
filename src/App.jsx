@@ -11,6 +11,7 @@ import Settings from "./screens/Settings/Settings"
 import CompanyList from "./screens/CompanyList/CompanyList"
 
 export default (props) => {
+    
     // let location = useLocation()
 
     return (

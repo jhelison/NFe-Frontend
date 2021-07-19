@@ -120,3 +120,34 @@
 .custom-checkbox {
     color: brown;
 }
+
+.modal {
+    width: 300px;
+    position: absolute;
+    background-color: var(--foreground-white);
+
+    left: calc((100vw / 2) - 150px);
+    top: calc((100vh / 2) - 70px);
+
+    border-radius: 4px;
+
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2px);
+}
+
+.modal-divider {
+    height: 1px;
+    width: 100%;
+
+    background-color: var(--foreground-dark);
+}

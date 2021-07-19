@@ -4,15 +4,19 @@ import { remote } from "electron"
 import { FiMinus } from "react-icons/fi";
 import { FiX } from "react-icons/fi";
 
+import {showNotification} from '../../util/notifications'
+
 var window = remote.getCurrentWindow()
 
 const Header = (props) => {
+
     const minimizeWindow = () => {
         window.minimize()
     }
 
     const closeWindow = () => {
         window.hide()
+        showNotification("Aplicativo minimizado no tray")
     }
 
     return (

@@ -3,6 +3,8 @@ import "regenerator-runtime/runtime"
 import path from "path"
 import { app, BrowserWindow, Menu, Tray } from "electron"
 
+import { showNotification } from './util/notifications'
+
 let mainWindow = null
 let tray = null
 
@@ -75,8 +77,16 @@ const buildMainWindow = async () => {
     })
 
     mainWindow.on('closed', () => {
+        // 
+        // setTimeout(() => {
         mainWindow = null
+        // }, 500)
+        
     })
+
+    // mainWindow.on('close', () => {
+        
+    // })
 
     mainWindow.webContents.on("new-window", (event, url) => {
         event.preventDefault()
@@ -138,8 +148,13 @@ app.whenReady().then(() => {
 }).catch(console.log)
 
 app.on("window-all-closed", () => {
-    if (process.platform !== "darwin") {
-        app.quit()
-    }
+    showNotification("Gerenciador encerrado com sucesso", true)
+
+    setTimeout(() => {
+        if (process.platform !== "darwin") {
+            app.quit()
+        }
+    }, 3000);
+
 })
 

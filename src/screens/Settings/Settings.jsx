@@ -1,4 +1,5 @@
-import React from "react"
+import React, { useState } from "react"
+const {dialog} = require('electron').remote
 
 import Content from "../../components/template/Content"
 
@@ -10,6 +11,22 @@ import CustomCheckbox from "../../components/CustomCheckbox"
 import CustomButton from "../../components/CustomButton"
 
 const Settings = () => {
+    const [databasePath, setDatabasePath] = useState("")
+
+
+    const showOpenDialogF = async () => {
+        const path = await dialog.showOpenDialog({
+            properties: ['openFile'],
+            filters: [
+                {name: 'Banco de dados Firebird', extensions: ['FDB']}
+            ]
+        })
+
+        if(path.filePaths){
+            setDatabasePath(path.filePaths[0])
+        }
+    }
+
     return (
         <Content title="Configuração Geral">
             <FileSelectExtended
@@ -17,6 +34,9 @@ const Settings = () => {
                 label="Banco de dados C-plus (C-PLUS.FDB)"
                 searchStatus="Pesquisa automatica em espera"
                 placeholder="C:\CPlus\CPLUS.FDB"
+                value={databasePath}
+                onChange={(e) => setDatabasePath(e.value)}
+                selectOnClick={showOpenDialogF}
             />
             <FileSelectExtended
                 className="mb-10"
