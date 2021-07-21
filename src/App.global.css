@@ -84,6 +84,13 @@ label {
     line-height: 12px;
 }
 
+.h2-label {
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: normal;
+}
+
 .span-label {
     font-weight: 600;
     color: var(--secondary-black);

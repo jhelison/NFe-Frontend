@@ -30,6 +30,7 @@ const Settings = () => {
     return (
         <Content title="Configuração Geral">
             <FileSelectExtended
+                id="database-input"
                 className="mb-10"
                 label="Banco de dados C-plus (C-PLUS.FDB)"
                 searchStatus="Pesquisa automatica em espera"
@@ -39,6 +40,7 @@ const Settings = () => {
                 selectOnClick={showOpenDialogF}
             />
             <FileSelectExtended
+                id='to-send-input'
                 className="mb-10"
                 label="Pasta pendente de recepção NFe"
                 searchStatus="Pesquisa automatica em espera"
@@ -46,6 +48,7 @@ const Settings = () => {
             />
             <div className="d-grid grid-1-1 mb-10">
                 <CustomTextInput
+                    id="execution-interval"
                     label="Intervalo de execução"
                     placeholder="5s"
                     mask="99"

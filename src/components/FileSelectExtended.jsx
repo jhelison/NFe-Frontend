@@ -6,6 +6,7 @@ const FileSelectExtended = (props) => {
     return (
         <div className={props.className}>
             <CustomTextInputWithButton
+                id={props.id}
                 label={props.label}
                 className="mb-5"
                 placeholder={props.placeholder}

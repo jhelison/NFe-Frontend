@@ -4,8 +4,9 @@ import InputMask from 'react-input-mask'
 const CustomTextInput = (props) => {
     return (
         <div className={"d-flex flex-column custom-input-container " + props.className}>
-            <h2 className="mb-5">{props.label}</h2>
+            <label htmlFor={props.id} className="mb-5 h2-label">{props.label}</label>
             <InputMask
+                id={props.id}
                 spellCheck="false"
                 placeholder={props.placeholder}
                 className={"custom-input pl-10" + (props.error ? " custom-input-error" : "")}

@@ -39,10 +39,12 @@ const NewCompany = (props) => {
                 className="mb-10"
                 label="Nome da empresa"
                 placeholder="Nome da empresa"
+                id="company-name"
             />
 
             <div className="d-grid grid-1-1 grid-gap-10 mb-10">
                 <CustomTextInput
+                    id="company-CNPJ"
                     label="CNPJ"
                     placeholder="00.000.000/0000-00"
                     mask="99.999.999/9999-99"
@@ -70,11 +72,12 @@ const NewCompany = (props) => {
 
             <div className="d-grid grid-2-1 grid-gap-10 mb-10">
                 <CustomTextInputWithButton
+                    id="company-path"
                     label="Caminho do certificado"
                     placeholder="C:\"
                 />
 
-                <CustomTextInput label="Senha" placeholder="00000000" />
+                <CustomTextInput label="Senha" placeholder="00000000" id="company-password"/>
             </div>
 
             <h2 className="mb-10">Informações do certificado</h2>

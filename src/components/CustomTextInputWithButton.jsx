@@ -7,9 +7,10 @@ const CustomTextInputWithButton = (props) => {
                 "d-flex flex-column custom-input-container " + props.className
             }
         >
-            <h2 className="mb-5">{props.label}</h2>
+            <label htmlFor={props.id} className="mb-5 h2-label">{props.label}</label>
             <div className="d-flex">
                 <input
+                    id={props.id}
                     spellCheck="false"
                     placeholder={props.placeholder}
                     className={

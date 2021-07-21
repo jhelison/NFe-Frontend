@@ -19,7 +19,7 @@ import NFeIcon from "../../../assets/cmm-sistemas-selo-nfe.svg"
 const iconSize = "23px"
 
 const Aside = (props) => {
-    const [isModal, setIsModal] = useState(true)
+    const [isModal, setIsModal] = useState(false)
 
     let history = useHistory()
     let location = useLocation()
